@@ -39,7 +39,7 @@ public class Game extends Jogo {
             for (int j = 0; j < 3; j++)
                 tabuleiro[i][j] = " ";
 
-        jogador = 1;  // Para que ao chamar verificarJogador, ele volte para o jogador 0
+        jogador = 1;
         cont = 0;
         parada = 1;
     }
@@ -66,7 +66,7 @@ public class Game extends Jogo {
                 System.out.println("Digite a coluna escolhida (0, 1 ou 2): ");
                 colunaJogada = scanner.nextInt();
 
-                scanner.nextLine(); // limpa o buffer
+                scanner.nextLine(); 
 
                 if (linhaJogada >= 0 && linhaJogada < 3 &&
                         colunaJogada >= 0 && colunaJogada < 3 &&
@@ -79,7 +79,7 @@ public class Game extends Jogo {
                 }
             } catch (Exception e) {
                 System.out.println("Entrada inválida! Digite apenas números entre 0 e 2.");
-                scanner.nextLine(); // limpa a entrada incorreta
+                scanner.nextLine(); 
             }
         } while (true);
     }
